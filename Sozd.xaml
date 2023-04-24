@@ -1,0 +1,38 @@
+﻿<Window x:Class="Messenjer.Sozd"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Messenjer"
+        mc:Ignorable="d"
+        Title="Sozd" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <TextBlock HorizontalAlignment="Center" TextAlignment="Center" FontSize="20" TextWrapping="Wrap" VerticalAlignment="Bottom" Height="53" Width="174" Margin="0,0,0,9"><Run Language="ru-ru" Text="Создание Сервера"/></TextBlock>
+        <TextBox x:Name="NameZ" HorizontalAlignment="Center" Margin="0,37,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="326" Height="26"/>
+        <TextBlock HorizontalAlignment="Center" Margin="0,10,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="326" Height="22"><Run Language="ru-ru" Text="Введите отображаемое имя"/></TextBlock>
+        <TextBox x:Name="IPshnik1" TextWrapping="Wrap" Margin="237,36,495,10" Grid.Row="2"/>
+        <TextBlock HorizontalAlignment="Center" Margin="0,10,0,0" Grid.Row="2" TextWrapping="Wrap" VerticalAlignment="Top" Height="21" Width="326"><Run Language="ru-ru" Text="Введите "/><Run Text="IP "/><Run Language="ru-ru" Text="сервера"/></TextBlock>
+        <Button x:Name="Create" FontSize="20" Content="Завершить создание сервера" HorizontalAlignment="Center" Grid.Row="4" VerticalAlignment="Center" Height="47" Width="326" Click="Create_Click"/>
+        <TextBox x:Name="Members" TextWrapping="Wrap" Margin="237,41,237,4" Grid.Row="3"/>
+        <TextBlock HorizontalAlignment="Center" Margin="0,15,0,0" Grid.Row="3" TextWrapping="Wrap" VerticalAlignment="Top" Height="21" Width="326"><Run Language="ru-ru" Text="Введите количество участников"/></TextBlock>
+        <TextBox x:Name="IPshnik2" TextWrapping="Wrap" Margin="322,36,410,10" Grid.Row="2"/>
+        <TextBox x:Name="IPshnik3" TextWrapping="Wrap" Margin="409,36,323,10" Grid.Row="2"/>
+        <TextBox x:Name="IPshnik4" TextWrapping="Wrap" Margin="495,36,237,10" Grid.Row="2"/>
+        <TextBlock HorizontalAlignment="Left" Margin="305,46,0,0" Grid.Row="2" TextWrapping="Wrap" Text="." VerticalAlignment="Top" Width="17" Height="16" TextAlignment="Center"/>
+        <TextBlock HorizontalAlignment="Left" Margin="390,46,0,0" Grid.Row="2" TextWrapping="Wrap" Text="." VerticalAlignment="Top" Width="17" Height="16" TextAlignment="Center"/>
+        <TextBlock HorizontalAlignment="Left" Margin="478,46,0,0" Grid.Row="2" TextWrapping="Wrap" Text="." VerticalAlignment="Top" Width="17" Height="16" TextAlignment="Center"/>
+
+
+    </Grid>
+</Window>

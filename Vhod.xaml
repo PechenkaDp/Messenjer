@@ -1,0 +1,29 @@
+﻿<Window x:Class="Messenjer.Vhod"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Messenjer"
+        mc:Ignorable="d"
+        Title="Vhod" Height="450" Width="800">
+    <Grid Height="434" VerticalAlignment="Bottom">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <TextBlock HorizontalAlignment="Center" TextAlignment="Center" FontSize="20" TextWrapping="Wrap" VerticalAlignment="Center" Height="53" Width="264"><Run Language="ru-ru" Text="Подключение к"/><Run Text=" Сервер"/><Run Language="ru-ru" Text="у"/></TextBlock>
+        <TextBox x:Name="NameZ" HorizontalAlignment="Center" Margin="0,37,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="326" Height="26"/>
+        <TextBlock HorizontalAlignment="Center" Margin="0,10,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="326" Height="22"><Run Language="ru-ru" Text="Введите отображаемое имя"/></TextBlock>
+        <TextBox x:Name="IPshnik" TextWrapping="Wrap" Margin="237,36,237,10" Grid.Row="2"/>
+        <TextBlock HorizontalAlignment="Center" Margin="0,10,0,0" Grid.Row="2" TextWrapping="Wrap" VerticalAlignment="Top" Height="21" Width="326"><Run Language="ru-ru" Text="Введите "/><Run Text="IP "/><Run Language="ru-ru" Text="сервера"/></TextBlock>
+        <Button x:Name="Create" FontSize="20" Content="Войти на сервер" HorizontalAlignment="Center" Grid.Row="4" VerticalAlignment="Center" Height="47" Width="326" Click="Create_Click"/>
+
+    </Grid>
+</Window>
